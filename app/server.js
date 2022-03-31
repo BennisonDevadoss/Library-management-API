@@ -12,7 +12,7 @@ dotenv.config({ path: `${__dirname}/../.env` });
 
 const PORT = 4000;
 
-fastify.register(require('./routes/book.routes'));
+fastify.register(require('./routes/books.routes'));
 fastify.register(require('./routes/user-auth.routes'));
 
 fastify.listen(PORT, function (err, address) {

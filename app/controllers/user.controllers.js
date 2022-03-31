@@ -1,8 +1,8 @@
-const Users = require('../models').Users;
+// const Users = require('../models').Users;
 const dotenv = require('dotenv');
-const service = require('../service/user.service');
+const service = require('../services/users.services');
 
-dotenv.config();
+
 process.env.TOKEN_SECRET;
 console.log('process.env.TOKEN_SECRET:', process.env.TOKEN_SECRET);
 
@@ -12,6 +12,7 @@ function login(req, reply) {
         email: req.body.email,
         password: req.body.password
     }
+    console.log('loginDetail is', loginDetail)
 
     return service.userLogin(loginDetail)
         .then((access_token) => {
@@ -23,11 +24,6 @@ function login(req, reply) {
         .catch(error => reply.status(400).send(error));
 }
 
-function list(req, reply) {
-}
-
-
 module.exports = {
     login,
-    list,
 }

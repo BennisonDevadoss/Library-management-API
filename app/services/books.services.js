@@ -1,9 +1,10 @@
-// const Books = require("../controllers/Books")
-const Book = require('../models').Books;
+// const Book = require("../controllers/Book")
+const db = require('../models');
+const { Book } = db;
 
-function createBook(attribute) {
-    return Book.create(attribute);
-}
+    function create(attribute) {
+        return Book.create(attribute);
+    }
 
 function list() {
     return Book
@@ -24,10 +25,10 @@ function getById(id) {
     })
 }
 
-async function updatedBook(id, attribute) {
+async function update(id, attribute) {  /// updatedBook
     const book = await Book.findOne({
         where: {
-            id:  id ,
+            id: id,
         }
     })
     if (!book) {
@@ -37,10 +38,10 @@ async function updatedBook(id, attribute) {
 
 }
 
-async function deleteBook(id) {
+async function destroy(id) {      // deletedBook
     const book = await Book.findOne({
         where: {
-            id:  id ,
+            id: id,
         }
     })
     if (!book) {
@@ -50,9 +51,9 @@ async function deleteBook(id) {
 }
 
 module.exports = {
-    createBook,
+    create,
     list,
     getById,
-    updatedBook,
-    deleteBook
+    update,
+    destroy
 }

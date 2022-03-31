@@ -1,5 +1,4 @@
-const Books = require('../models').Books;
-const service = require('../service/book.service');
+const service = require('../services/books.services');
 
 function create(req, reply) {
     const attribute = {
@@ -9,8 +8,8 @@ function create(req, reply) {
         price: req.body.price,
         notes: req.body.notes
     }
-    return service.createBook(attribute)
-        .then(books => reply.status(200).send(books))
+    return service.create(attribute)
+        .then(book => reply.status(200).send(book))
         .catch(error => reply.status(400).send(error))
 }
 
@@ -20,7 +19,7 @@ function list(req, reply) {
         .catch(error => reply.status(400).send(error));
 }
 
-function listOne(req, reply) {
+function getById(req, reply) {
     const id = req.params.id;
     return service.getById(id).then((book) => {
         reply.send(book)
@@ -31,7 +30,7 @@ function listOne(req, reply) {
 }
 //....................................................................
 
-function updated(req, reply) {
+function update(req, reply) {
     const attribute = {
         name: req.body.name,
         category: req.body.category,
@@ -40,13 +39,13 @@ function updated(req, reply) {
         notes: req.body.notes
 
     }
-    return service.updatedBook(req.params.id,attribute)
+    return service.update(req.params.id, attribute)
         .then((book) => reply.status(200).send(book))
         .catch(error => reply.status(400).send(error))
 }
 
-function deleted(req, reply) {
-    return service.deleteBook(req.params.id)
+function destroy(req, reply) {
+    return service.destroy(req.params.id)
         .then(() => reply.status(200).send({
             message: "Book was deleted successfully"
         }))
@@ -57,7 +56,7 @@ function deleted(req, reply) {
 module.exports = {
     create,
     list,
-    listOne,
-    updated,
-    deleted
+    getById,
+    update,
+    destroy
 }

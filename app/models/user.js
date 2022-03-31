@@ -1,9 +1,6 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  const Users = sequelize.define('Users', {
+  const User = sequelize.define('User', { //Users
     name: {
       allowNull: false,
       type: DataTypes.STRING
@@ -20,6 +17,15 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
       type: DataTypes.STRING
     },
-  })
-  return Users;
+
+  },
+    {
+      tablename: 'users',
+      underscored: true,
+      createdAt: 'created_at',
+      updatedAt: 'updated_at',
+      deletedAt: 'deleted_at',
+      paranoid: true,
+    })
+  return User;  /// ?   Users
 };

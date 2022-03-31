@@ -1,11 +1,13 @@
 const bcrypt = require('bcrypt');
-const Users = require('../models').Users;
+const db = require('../models');
+const { User } = db;
 const jwt = require('jsonwebtoken');
 const process = require('process');
 
 function generateAccessToken(email) {
+    console.log("emaillllllllllll", email)
     console.log("process.env.TOKEN_SECRET", process.env.TOKEN_SECRET)
-    return jwt.sign({ email }, `${process.env.TOKEN_SECRET}`, { expiresIn: 1800 });
+    return jwt.sign({ email }, `${process.env.TOKEN_SECRET}`);
 }
 
 function validatePassword(user, password) {
@@ -21,7 +23,8 @@ function validatePassword(user, password) {
 
 async function userLogin(loginDetail) {
 
-    const user = await Users.findOne({ email: loginDetail.email });
+    const user = await User.findOne({ where: { email: loginDetail.email } });
+    console.log('user is', user);
 
     if (!user) {
         throw new Error("Invalid user name or password");
@@ -40,15 +43,15 @@ async function userLogin(loginDetail) {
 }
 
 function getById(id) {
-    return Users.findOne({
+    return users.findOne({   //?
         where: {
             id
         }
-    }).then((users) => {
-        if (!users) {
+    }).then((user) => {
+        if (!user) {
             throw new Error('User not found')
         }
-        return users;
+        return user;     // ?
     })
 }
 
