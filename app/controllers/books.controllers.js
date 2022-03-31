@@ -14,15 +14,11 @@ function create(req, reply) {
         .catch(error => reply.status(400).send(error))
 }
 
-
-
 function list(req, reply) {
     return service.list()
         .then(books => reply.status(200).send(books))
         .catch(error => reply.status(400).send(error));
 }
-
-
 
 function listOne(req, reply) {
     const id = req.params.id;

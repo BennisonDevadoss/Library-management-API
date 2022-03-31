@@ -1,16 +1,13 @@
 const users = require('../models').Users;
 const { verify } = require('jsonwebtoken');
-// const dotenv = require('dotenv');
+const dotenv = require('dotenv');
 
 const JWT_SECRET_KEY = process.env.TOKEN_SECRET;
-console.log('JWT_SECRET_KEY', JWT_SECRET_KEY);
 
 function getHeaderToken(headers) {
     const bearerHeader = headers.authorization;
-    console.log("------------------>", bearerHeader)
     const bearer = bearerHeader ? bearerHeader.split(" ") : [];
     const bearerToken = bearer[1];
-    console.log("bearertoken", bearerToken)
     return bearerToken;
 }
 
@@ -30,10 +27,8 @@ function verifyToken(token, JWT_SECRET_KEY) {
 
 const userAuthenticate = (fastify) => {
     fastify.decorateRequest("currentUser", null);
-    console.log("----------------------------------------------")
     fastify.addHook("preHandler", async (request, reply) => {
         const token = getHeaderToken(request.headers)
-        console.log("token", token);
         if (!token) {
             const error = {
                 error: ["You need to sign-in to access this page"],
@@ -41,7 +36,6 @@ const userAuthenticate = (fastify) => {
             reply.status(401).send(error);
         }
         else {
-            console.log('else is called')
             try {
                 const userAttrs = await verifyToken(token, JWT_SECRET_KEY);
                 console.log('userAttrs-->', userAttrs)
