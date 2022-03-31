@@ -2,10 +2,7 @@ const db = require('../models');
 const { verify } = require('jsonwebtoken');
 const dotenv = require('dotenv');
 
-
-
 const JWT_SECRET_KEY = process.env.TOKEN_SECRET;
-
 const { User } = db;
 
 function getHeaderToken(headers) {
@@ -41,7 +38,6 @@ const userAuthenticate = (fastify) => {
             reply.status(401).send(error);
         }
         else {
-            // console.log("======================>is else block working")
             try {
                 const userAttrs = await verifyToken(token, JWT_SECRET_KEY);
                 console.log('userAttrs-->', userAttrs.email);
@@ -52,16 +48,11 @@ const userAuthenticate = (fastify) => {
                     }
                 });
                 console.log("user============-----------------------=>", user);
-                // console.log("user.access_toke ", user.access_token)
-                // console.log("------------------>token", token)
                 if (user && user.access_token === token) {
-                    // console.log("------------------------------------------------------------------------")
                     request.currentUser = user;
                     reply.header('Authorization', `Bearer ${token}`);
                 }
                 else {
-                    // console.log("------------------------------------------------------------------------")
-
                     reply.status(400).send({
                         error: ["session has expired"]
                     });
