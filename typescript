@@ -1,1013 +1,0 @@
-Script started on 2022-03-29 13:18:08+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="211" LINES="59"]
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ $ sequelize db:migrate[K[K[K[K[K[K[Kseed:[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksequelise[K[Kze --helo
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-sequelize <command>
-
-Commands:
-  sequelize db:migrate                        Run pending migrations
-  sequelize db:migrate:schema:timestamps:add  Update migration table to have timestamps
-  sequelize db:migrate:status                 List the status of all migrations
-  sequelize db:migrate:undo                   Reverts a migration
-  sequelize db:migrate:undo:all               Revert all migrations ran
-  sequelize db:seed                           Run specified seeder
-  sequelize db:seed:undo                      Deletes data from the database
-  sequelize db:seed:all                       Run every seeder
-  sequelize db:seed:undo:all                  Deletes data from the database
-  sequelize db:create                         Create database specified by configuration
-  sequelize db:drop                           Drop database specified by configuration
-  sequelize init                              Initializes project
-  sequelize init:config                       Initializes configuration
-  sequelize init:migrations                   Initializes migrations
-  sequelize init:models                       Initializes models
-  sequelize init:seeders                      Initializes seeders
-  sequelize migration:generate                Generates a new migration file
-  sequelize migration:create                  Generates a new migration file
-  sequelize model:generate                    Generates a model and its migration
-  sequelize model:create                      Generates a model and its migration
-  sequelize seed:generate                     Generates a new seed file
-  sequelize seed:create                       Generates a new seed file
-
-Options:
-  --version  Show version number                                                                                                                                                                          [boolean]
-  --help     Show help                                                                                                                                                                                    [boolean]
-
-Please specify a command
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sequelise db:dee[K[K[Kseed
-sequelise: command not found
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sequelize dbL[K:seed
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-Loaded configuration file "db/config/config.json".
-Using environment "development".
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su postgres
-[sudo] password for bennison: 
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# \c library-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# ][K\lt
-invalid command \lt
-Try \? for help.
-library-db=# \dt
-             List of relations
- Schema |     Name      | Type  |  Owner   
---------+---------------+-------+----------
- public | Books         | table | bennison
- public | SequelizeMeta | table | bennison
- public | Users         | table | bennison
-(3 rows)
-
-library-db=# select * [K
-library-db-# from ""B"o"o"k"s"
-library-db-# ; 
- id |            name             | category |        author        | price |           notes           |           createdAt           |           updatedAt           | deletedAt 
-----+-----------------------------+----------+----------------------+-------+---------------------------+-------------------------------+-------------------------------+-----------
-  1 | Power of Passitive Thinking | Novel    | Norman Vincent Peale |   299 | International best seller | 2022-03-29 12:20:47.115+05:30 | 2022-03-29 12:20:47.115+05:30 | 
-(1 row)
-
-library-db=# exit
-postgres@yavar:/home/bennison/library-management$ exit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ suquelize dbL[K:seed:[K:20220325130545-Books.js
-suquelize: command not found
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sq[Kw[Kequelize dbLse[K[K[K:seed:20220325130545-Books.js
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-sequelize <command>
-
-Commands:
-  sequelize db:migrate                        Run pending migrations
-  sequelize db:migrate:schema:timestamps:add  Update migration table to have timestamps
-  sequelize db:migrate:status                 List the status of all migrations
-  sequelize db:migrate:undo                   Reverts a migration
-  sequelize db:migrate:undo:all               Revert all migrations ran
-  sequelize db:seed                           Run specified seeder
-  sequelize db:seed:undo                      Deletes data from the database
-  sequelize db:seed:all                       Run every seeder
-  sequelize db:seed:undo:all                  Deletes data from the database
-  sequelize db:create                         Create database specified by configuration
-  sequelize db:drop                           Drop database specified by configuration
-  sequelize init                              Initializes project
-  sequelize init:config                       Initializes configuration
-  sequelize init:migrations                   Initializes migrations
-  sequelize init:models                       Initializes models
-  sequelize init:seeders                      Initializes seeders
-  sequelize migration:generate                Generates a new migration file
-  sequelize migration:create                  Generates a new migration file
-  sequelize model:generate                    Generates a model and its migration
-  sequelize model:create                      Generates a model and its migration
-  sequelize seed:generate                     Generates a new seed file
-  sequelize seed:create                       Generates a new seed file
-
-Options:
-  --version  Show version number                                                                                                                                                                          [boolean]
-  --help     Show help                                                                                                                                                                                    [boolean]
-
-Unknown arguments: config, models-path, modelsPath, seeders-path, seedersPath, migrations-path, migrationsPath, db:seed:20220325130545-Books.js
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sequelae[K[Kiae[K[Kze db:ds[K[Kseed:20220329060453-Books.js
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-sequelize <command>
-
-Commands:
-  sequelize db:migrate                        Run pending migrations
-  sequelize db:migrate:schema:timestamps:add  Update migration table to have timestamps
-  sequelize db:migrate:status                 List the status of all migrations
-  sequelize db:migrate:undo                   Reverts a migration
-  sequelize db:migrate:undo:all               Revert all migrations ran
-  sequelize db:seed                           Run specified seeder
-  sequelize db:seed:undo                      Deletes data from the database
-  sequelize db:seed:all                       Run every seeder
-  sequelize db:seed:undo:all                  Deletes data from the database
-  sequelize db:create                         Create database specified by configuration
-  sequelize db:drop                           Drop database specified by configuration
-  sequelize init                              Initializes project
-  sequelize init:config                       Initializes configuration
-  sequelize init:migrations                   Initializes migrations
-  sequelize init:models                       Initializes models
-  sequelize init:seeders                      Initializes seeders
-  sequelize migration:generate                Generates a new migration file
-  sequelize migration:create                  Generates a new migration file
-  sequelize model:generate                    Generates a model and its migration
-  sequelize model:create                      Generates a model and its migration
-  sequelize seed:generate                     Generates a new seed file
-  sequelize seed:create                       Generates a new seed file
-
-Options:
-  --version  Show version number                                                                                                                                                                          [boolean]
-  --help     Show help                                                                                                                                                                                    [boolean]
-
-Unknown arguments: config, models-path, modelsPath, seeders-path, seedersPath, migrations-path, migrationsPath, db:seed:20220329060453-Books.js
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sequelis[Kze dbL[K:seed:all
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-Loaded configuration file "db/config/config.json".
-Using environment "development".
-== 20220329060210-Users: migrating =======
-== 20220329060210-Users: migrated (0.000s)
-
-== 20220329060453-Books: migrating =======
-
-[31mERROR:[39m null value in column "createdAt" violates not-null constraint
-
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sequelize seedL[K[K[K[K[Kde=b[K[K[Kb:seed:all
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-Loaded configuration file "db/config/config.json".
-Using environment "development".
-== 20220329060210-Users: migrating =======
-== 20220329060210-Users: migrated (0.001s)
-
-== 20220329060453-Books: migrating =======
-== 20220329060453-Books: migrated (0.011s)
-
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudp oa[K[K[K[Ko su posrgres pslq[K[Kql
-su: user posrgres does not exist
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ suso[K[Kdo su poas[K[Kstgras[K[Kes 
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# ][K\c test[K[K[K[Klibrary [K-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# select * from [K[K[K[K[K[K
-library-db-# fom [K[K[Krom "Bppo[K[K[Koojs[K[Kks"; 
- id |             name             | category |        author        | price |               notes               |           createdAt           |           updatedAt           | deletedAt 
-----+------------------------------+----------+----------------------+-------+-----------------------------------+-------------------------------+-------------------------------+-----------
-  1 | Power of Passitive Thinking  | Novel    | Norman Vincent Peale |   299 | International best seller         | 2022-03-29 12:20:47.115+05:30 | 2022-03-29 12:20:47.115+05:30 | 
-  3 | The Alchemist                | Novel    | Paulo Coelho         |   599 | One of the best book in the world | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  4 | The word as I see it         | Novel    | Albert Einsten       |   399 | International best sellers        | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  5 | All the night we can not see | Novel    | Mike                 |   299 |                                   | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-(4 rows)
-
-library-db=# select * from [K[K[K[K[K[K
-library-db-# from "Users"; 
- id | name | email | encrypted_password | access_token | createdAt | updatedAt | deletedAt 
-----+------+-------+--------------------+--------------+-----------+-----------+-----------
-(0 rows)
-
-library-db=# exit'[K
-postgres@yavar:/home/bennison/library-management$ exit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su [K[K[K[K[K[K[K[Ks[Knpm start
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648545750915,"pid":12166,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648545765506,"pid":12166,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45934},"msg":"incoming request"}
-{"level":30,"time":1648545765508,"pid":12166,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":2.0940339993685484,"msg":"request completed"}
-{"level":30,"time":1648545773027,"pid":12166,"hostname":"yavar","reqId":"req-2","req":{"method":"GET","url":"/books","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45934},"msg":"incoming request"}
-{"level":30,"time":1648545773027,"pid":12166,"hostname":"yavar","reqId":"req-2","msg":"Route GET:/books not found"}
-{"level":30,"time":1648545773027,"pid":12166,"hostname":"yavar","reqId":"req-2","res":{"statusCode":404},"responseTime":0.37684700079262257,"msg":"request completed"}
-{"level":30,"time":1648545777257,"pid":12166,"hostname":"yavar","reqId":"req-3","req":{"method":"GET","url":"/Books","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45934},"msg":"incoming request"}
-{"level":30,"time":1648545777257,"pid":12166,"hostname":"yavar","reqId":"req-3","msg":"Route GET:/Books not found"}
-{"level":30,"time":1648545777258,"pid":12166,"hostname":"yavar","reqId":"req-3","res":{"statusCode":404},"responseTime":0.28874499909579754,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648545811685,"pid":12221,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648545817671,"pid":12221,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/books/view","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45936},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books";
-{"level":30,"time":1648545817700,"pid":12221,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":28.007202001288533,"msg":"request completed"}
-{"level":30,"time":1648545877316,"pid":12221,"hostname":"yavar","reqId":"req-2","req":{"method":"POST","url":"/books/add","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45938},"msg":"incoming request"}
-Executing (default): INSERT INTO "Books" ("id","name","category","author","price","notes","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7) RETURNING "id","name","category","author","price","notes","createdAt","updatedAt";
-{"level":30,"time":1648545877334,"pid":12221,"hostname":"yavar","reqId":"req-2","res":{"statusCode":201},"responseTime":17.23500300012529,"msg":"request completed"}
-{"level":30,"time":1648545905285,"pid":12221,"hostname":"yavar","reqId":"req-3","req":{"method":"GET","url":"/books/2","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45940},"msg":"incoming request"}
-{"level":30,"time":1648545905285,"pid":12221,"hostname":"yavar","reqId":"req-3","msg":"Route GET:/books/2 not found"}
-{"level":30,"time":1648545905285,"pid":12221,"hostname":"yavar","reqId":"req-3","res":{"statusCode":404},"responseTime":0.37790000066161156,"msg":"request completed"}
-{"level":30,"time":1648545917617,"pid":12221,"hostname":"yavar","reqId":"req-4","req":{"method":"GET","url":"/book/2","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45940},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books" WHERE "Books"."name" = '2' LIMIT 1;
-{"level":30,"time":1648545917622,"pid":12221,"hostname":"yavar","reqId":"req-4","res":{"statusCode":400},"responseTime":4.93873400054872,"msg":"request completed"}
-{"level":30,"time":1648545925421,"pid":12221,"hostname":"yavar","reqId":"req-5","req":{"method":"GET","url":"/book/3","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45942},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books" WHERE "Books"."name" = '3' LIMIT 1;
-{"level":30,"time":1648545925422,"pid":12221,"hostname":"yavar","reqId":"req-5","res":{"statusCode":400},"responseTime":1.0916080009192228,"msg":"request completed"}
-{"level":30,"time":1648545942925,"pid":12221,"hostname":"yavar","reqId":"req-6","req":{"method":"GET","url":"/book/6","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45944},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books" WHERE "Books"."name" = '6' LIMIT 1;
-{"level":30,"time":1648545942929,"pid":12221,"hostname":"yavar","reqId":"req-6","res":{"statusCode":400},"responseTime":4.201050998643041,"msg":"request completed"}
-{"level":30,"time":1648545972837,"pid":12221,"hostname":"yavar","reqId":"req-7","req":{"method":"GET","url":"/book/Power%20of%20Passitive%20Thinking","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45946},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books" WHERE "Books"."name" = 'Power of Passitive Thinking' LIMIT 1;
-{"level":30,"time":1648545972841,"pid":12221,"hostname":"yavar","reqId":"req-7","res":{"statusCode":200},"responseTime":3.804278999567032,"msg":"request completed"}
-{"level":30,"time":1648546018674,"pid":12221,"hostname":"yavar","reqId":"req-8","req":{"method":"GET","url":"/book/bookName/Power%20of%20Passitive%20Thinking","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45948},"msg":"incoming request"}
-{"level":30,"time":1648546018674,"pid":12221,"hostname":"yavar","reqId":"req-8","msg":"Route GET:/book/bookName/Power%20of%20Passitive%20Thinking not found"}
-{"level":30,"time":1648546018675,"pid":12221,"hostname":"yavar","reqId":"req-8","res":{"statusCode":404},"responseTime":0.3241900000721216,"msg":"request completed"}
-{"level":30,"time":1648546058890,"pid":12221,"hostname":"yavar","reqId":"req-9","req":{"method":"PUT","url":"/book/bookName/Power%20of%20Passitive%20Thinking","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45948},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books" WHERE "Books"."name" = 'Power of Passitive Thinking' LIMIT 1;
-Executing (default): UPDATE "Books" SET "name"=$1,"updatedAt"=$2 WHERE "id" = $3
-{"level":30,"time":1648546058905,"pid":12221,"hostname":"yavar","reqId":"req-9","res":{"statusCode":200},"responseTime":14.661805000156164,"msg":"request completed"}
-{"level":30,"time":1648546087590,"pid":12221,"hostname":"yavar","reqId":"req-a","req":{"method":"DELETE","url":"/book/bookName/Power%20Of%20Passitive%20Thinking","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45950},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books" WHERE "Books"."name" = 'Power Of Passitive Thinking' LIMIT 1;
-Executing (default): DELETE FROM "Books" WHERE "id" = 1
-{"level":30,"time":1648546087597,"pid":12221,"hostname":"yavar","reqId":"req-a","res":{"statusCode":200},"responseTime":6.554509999230504,"msg":"request completed"}
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su postgres 
-[sudo] password for bennison: 
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# \[K\c library-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# see[Klect * from [K[K[K[K[K[K
-library-db-# from ""B"o"o"k"s"
-library-db-# ; 
- id |             name             | category |        author        | price |               notes               |           createdAt           |           updatedAt           | deletedAt 
-----+------------------------------+----------+----------------------+-------+-----------------------------------+-------------------------------+-------------------------------+-----------
-  3 | The Alchemist                | Novel    | Paulo Coelho         |   599 | One of the best book in the world | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  4 | The word as I see it         | Novel    | Albert Einsten       |   399 | International best sellers        | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  5 | All the night we can not see | Novel    | Mike                 |   299 |                                   | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  6 | Power of Passitive Thinking  | Novel    | Norman Vincent Peale |   299 | International best seller         | 2022-03-29 14:54:37.318+05:30 | 2022-03-29 14:54:37.318+05:30 | 
-(4 rows)
-
-library-db=# exit
-postgres@yavar:/home/bennison/library-management$ ez[Kxit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ p[Knpm start
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648546191820,"pid":12410,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648546222054,"pid":12410,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/books","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45952},"msg":"incoming request"}
-{"level":30,"time":1648546222055,"pid":12410,"hostname":"yavar","reqId":"req-1","msg":"Route GET:/books not found"}
-{"level":30,"time":1648546222058,"pid":12410,"hostname":"yavar","reqId":"req-1","res":{"statusCode":404},"responseTime":3.455339999869466,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648546235827,"pid":12452,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648546236306,"pid":12476,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648546236520,"pid":12490,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648546237701,"pid":12507,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648546246593,"pid":12507,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/books/view","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45954},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "category", "author", "price", "notes", "createdAt", "updatedAt" FROM "Books" AS "Books";
-{"level":30,"time":1648546246621,"pid":12507,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":28.506770001724362,"msg":"request completed"}
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm install bcy[Krypt 
-[?25l[[100;90m..................[0m] \ reify: [32;40mtiming[0m [35marborist:ctor[0m Completed in 0ms[0m[K[[100;90m..................[0m] | idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 426ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree: [32;40mtiming[0m [35midealTree[0m Completed in 5533ms[0m[K[[107;97m#########[0m[100;90m.........[0m] \ reify:fsevents: [7msill[0m [35mreify[0m mark deleted [ '/home/bennison/library-management/node_modules/fsevents' ][0m[K[[107;97m############[0m[100;90m......[0m] - reify:readable-stream: [32;40mtiming[0m [35mreifyNode:node_modules/glob[0m Completed in 119ms[0m[K[[107;97m############[0m[100;90m......[0m] - reify:minizlib: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/minizlib/-/minizlib-2.1.2.tgz 161ms (cache miss)[0m[K[[107;97m##############[0m[100;90m....[0m] - reify:webidl-conversions: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 205ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:https-proxy-agent: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.0.tgz 196ms (cache miss)[0m[K[[107;97m##################[0m] / reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] / reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] / reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] / reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] - reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[[107;97m##################[0m] / reify:@mapbox/node-pre-gyp: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.8.tgz 237ms (cache miss)[0m[K[K[?25h
-added 38 packages, and audited 233 packages in 7s
-
-23 packages are looking for funding
-  run `npm fund` for details
-
-found [32m[1m0[22m[39m vulnerabilities
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su postgres
-[sudo] password for bennison: 
-postgres@yavar:/home/bennison/library-management$ [sq[K[K[Kpsql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# ][K\l library-db
-                           List of databases
-    Name    |  Owner   | Encoding | Collate | Ctype | Access privileges 
-------------+----------+----------+---------+-------+-------------------
- library-db | bennison | UTF8     | en_IN   | en_IN | 
-(1 row)
-
-postgres=# \c libraty[K[Kry [K-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# select *
-library-db-# from ""U"s"e"r"s"
-library-db-# ; 
- id | name | email | encrypted_password | access_token | createdAt | updatedAt | deletedAt 
-----+------+-------+--------------------+--------------+-----------+-----------+-----------
-(0 rows)
-
-library-db=# exit
-postgres@yavar:/home/bennison/library-management$ exit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm install [K[K[K[K[K[K[K[K[K[K[K[K$ npm i --save fastify-bcrypt[1P[1P[1P[1P[1P[C[1P[1@n[1@p[1@m[1@ 
-[?25l[[100;90m..................[0m] \ reify: [32;40mtiming[0m [35marborist:ctor[0m Completed in 0ms[0m[K[[100;90m..................[0m] | idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[107;97m###########[0m[100;90m.......[0m] / reify:fsevents: [7msill[0m [35mreify[0m mark deleted [ '/home/bennison/library-management/node_modules/fsevents' ][0m[K[[107;97m###########[0m[100;90m.......[0m] / reify:fsevents: [7msill[0m [35mreify[0m mark deleted [ '/home/bennison/library-management/node_modules/fsevents' ][0m[K[[107;97m##############[0m[100;90m....[0m] \ reify:fastify-plugin: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-2.3.4.tgz 106ms (cache miss)[0m[K[[107;97m##############[0m[100;90m....[0m] \ reify:fastify-plugin: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-2.3.4.tgz 106ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] / reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] / reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] / reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] / reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] - reify:bcryptjs: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-2.4.3.tgz 203ms (cache miss)[0m[K[[107;97m##################[0m] \ reify:fastify-bcrypt: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/fastify-bcrypt/-/fastify-bcrypt-1.0.0.tgz 1192ms (cache miss)[0m[K[K[?25h
-added 3 packages, and audited 236 packages in 3s
-
-23 packages are looking for funding
-  run `npm fund` for details
-
-found [32m[1m0[22m[39m vulnerabilities
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm i --save fastify-bcrypt[11Psudo su postgresnpm install bcrypt [10Pstartsudo su postgres [8Pnpm startsudo su postgres rgres psqlequelize db:seed:all20220329060453-Books.js5130545-Books.js9060453-Books.jsall[K20220329060453-Books.js5130545-Books.js[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pdo su postgresequelize db:seed[1Pudo su postgresquelize db:seed:20220325130545-Books.js[25Pdo su postgres
-[sudo] password for bennison: 
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# \c librara[Ky-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# select * from "Users";
- id | name | email | encrypted_password | access_token | createdAt | updatedAt | deletedAt 
-----+------+-------+--------------------+--------------+-----------+-----------+-----------
-(0 rows)
-
-library-db=# select * from "Users";
- id |   name   |           email            |                      encrypted_password                      | access_token |          createdAt           |          updatedAt           | deletedAt 
-----+----------+----------------------------+--------------------------------------------------------------+--------------+------------------------------+------------------------------+-----------
-  1 | Bennison | bennisondevadoss@gmail.com | $2b$10$yjZlrpX8pLfMGLA2c4KsWObcEW3CFPEzLx0iU06KUd41iV4ToysiW |              | 2022-03-29 16:01:30.88+05:30 | 2022-03-29 16:01:30.88+05:30 | 
-(1 row)
-
-library-db=# select * from "Users";
-[?1049h[22;0;0t[?1h= id |    name    |           email            |                      encrypted_password                      | access_token |           createdAt           |           updatedAt           |           deletedAt            
-----+------------+----------------------------+--------------------------------------------------------------+--------------+-------------------------------+-------------------------------+---------------------- ---------
-  1 | Bennison   | bennisondevadoss@gmail.com | $2b$10$yjZlrpX8pLfMGLA2c4KsWObcEW3CFPEzLx0iU06KUd41iV4ToysiW |              | 2022-03-29 16:01:30.88+05:30  | 2022-03-29 16:01:30.88+05:30  | 
-  2 | Bennison D | bennisondevadoss@gmail.com | $2b$10$T5AyyS31IJIkaR1cbH5./OKYLYBX6MKqEYFDa1GY3Dg11B6diIxQO |              | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.0 31+05:30
-(2 rows)
-
-[7m(END)[27m[K...skipping...
- id |    name    |           email            |                      encrypted_password                      | access_token |           createdAt           |           updatedAt           |           deletedAt           
-----+------------+----------------------------+--------------------------------------------------------------+--------------+-------------------------------+-------------------------------+-------------------------------
-  1 | Bennison   | bennisondevadoss@gmail.com | $2b$10$yjZlrpX8pLfMGLA2c4KsWObcEW3CFPEzLx0iU06KUd41iV4ToysiW |              | 2022-03-29 16:01:30.88+05:30  | 2022-03-29 16:01:30.88+05:30  | 
-  2 | Bennison D | bennisondevadoss@gmail.com | $2b$10$T5AyyS31IJIkaR1cbH5./OKYLYBX6MKqEYFDa1GY3Dg11B6diIxQO |              | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30
-(2 rows)
-
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[1m~[0m
-[7m(END)[27m[K[K[?1l>[?1049l[23;0;0tlibrary-db=# select * from "Users";[1P";[1P";[1P";[1P";[1P";B";o";o";k";s";
- id |             name             | category |        author        | price |               notes               |           createdAt           |           updatedAt           | deletedAt 
-----+------------------------------+----------+----------------------+-------+-----------------------------------+-------------------------------+-------------------------------+-----------
-  3 | The Alchemist                | Novel    | Paulo Coelho         |   599 | One of the best book in the world | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  4 | The word as I see it         | Novel    | Albert Einsten       |   399 | International best sellers        | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  5 | All the night we can not see | Novel    | Mike                 |   299 |                                   | 2022-03-29 14:28:21.625+05:30 | 2022-03-29 14:28:21.625+05:30 | 
-  6 | Power of Passitive Thinking  | Novel    | Norman Vincent Peale |   299 | International best seller         | 2022-03-29 14:54:37.318+05:30 | 2022-03-29 14:54:37.318+05:30 | 
-  7 |  Alchemist                   | Novel    | Paulo Coelho         |   599 | One of the best book in the world | 2022-03-29 16:01:30.892+05:30 | 2022-03-29 16:01:30.892+05:30 | 
-  8 | The word as I see it         | Novel    | Albert Einsten       |   399 | International best sellers        | 2022-03-29 16:01:30.892+05:30 | 2022-03-29 16:01:30.892+05:30 | 
-  9 | All the night we can not see | Novel    | Mike                 |   299 |                                   | 2022-03-29 16:01:30.892+05:30 | 2022-03-29 16:01:30.892+05:30 | 
- 10 |  Alchemist                   | Novel    | Paulo Coelho         |   599 | One of the best book in the world | 2022-03-29 16:02:14.043+05:30 | 2022-03-29 16:02:14.043+05:30 | 
- 11 | The word as I see it         | Novel    | Albert Einsten       |   399 | International best sellers        | 2022-03-29 16:02:14.043+05:30 | 2022-03-29 16:02:14.043+05:30 | 
- 12 | All the night we can not see | Novel    | Mike                 |   299 |                                   | 2022-03-29 16:02:14.043+05:30 | 2022-03-29 16:02:14.043+05:30 | 
-(10 rows)
-
-library-db=# select * from "Books";
- id |             name             | category |     author     | price |               notes               |          createdAt           |          updatedAt           | deletedAt 
-----+------------------------------+----------+----------------+-------+-----------------------------------+------------------------------+------------------------------+-----------
- 13 |  Alchemist                   | Novel    | Paulo Coelho   |   599 | One of the best book in the world | 2022-03-29 16:03:58.23+05:30 | 2022-03-29 16:03:58.23+05:30 | 
- 14 | The word as I see it         | Novel    | Albert Einsten |   399 | International best sellers        | 2022-03-29 16:03:58.23+05:30 | 2022-03-29 16:03:58.23+05:30 | 
- 15 | All the night we can not see | Novel    | Mike           |   299 |                                   | 2022-03-29 16:03:58.23+05:30 | 2022-03-29 16:03:58.23+05:30 | 
-(3 rows)
-
-library-db=# select * from "Books";[1P";[1P";[1P";[1P";[1P";Books";Users";
- id |    name    |           email            |                      encrypted_password                      | access_token |           createdAt           |           updatedAt           |           deletedAt           
-----+------------+----------------------------+--------------------------------------------------------------+--------------+-------------------------------+-------------------------------+-------------------------------
-  1 | Bennison   | bennisondevadoss@gmail.com | $2b$10$yjZlrpX8pLfMGLA2c4KsWObcEW3CFPEzLx0iU06KUd41iV4ToysiW |              | 2022-03-29 16:01:30.88+05:30  | 2022-03-29 16:01:30.88+05:30  | 
-  2 | Bennison D | bennisondevadoss@gmail.com | $2b$10$T5AyyS31IJIkaR1cbH5./OKYLYBX6MKqEYFDa1GY3Dg11B6diIxQO |              | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30
-  3 | Bennison D | bennisondevadoss@gmail.com | $2b$10$VSY6ELE0wpvSNY0tjKhdbuYOGFly.HJsJuOfkV8Wn4Gwv6U94gRlW |              | 2022-03-29 16:03:58.218+05:30 | 2022-03-29 16:03:58.218+05:30 | 2022-03-29 16:03:58.218+05:30
-(3 rows)
-
-library-db=# select * from "Users";
- id |    name    |           email            |                      encrypted_password                      | access_token |           createdAt           |           updatedAt           |           deletedAt           
-----+------------+----------------------------+--------------------------------------------------------------+--------------+-------------------------------+-------------------------------+-------------------------------
-  1 | Bennison   | bennisondevadoss@gmail.com | $2b$10$yjZlrpX8pLfMGLA2c4KsWObcEW3CFPEzLx0iU06KUd41iV4ToysiW |              | 2022-03-29 16:01:30.88+05:30  | 2022-03-29 16:01:30.88+05:30  | 
-  2 | Bennison D | bennisondevadoss@gmail.com | $2b$10$T5AyyS31IJIkaR1cbH5./OKYLYBX6MKqEYFDa1GY3Dg11B6diIxQO |              | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30
-  3 | Bennison D | bennisondevadoss@gmail.com | $2b$10$VSY6ELE0wpvSNY0tjKhdbuYOGFly.HJsJuOfkV8Wn4Gwv6U94gRlW |              | 2022-03-29 16:03:58.218+05:30 | 2022-03-29 16:03:58.218+05:30 | 2022-03-29 16:03:58.218+05:30
-(3 rows)
-
-library-db=# select * from "Users";
- id |    name    |           email            |                      encrypted_password                      | access_token |           createdAt           |           updatedAt           |           deletedAt           
-----+------------+----------------------------+--------------------------------------------------------------+--------------+-------------------------------+-------------------------------+-------------------------------
-  1 | Bennison   | bennisondevadoss@gmail.com | $2b$10$yjZlrpX8pLfMGLA2c4KsWObcEW3CFPEzLx0iU06KUd41iV4ToysiW |              | 2022-03-29 16:01:30.88+05:30  | 2022-03-29 16:01:30.88+05:30  | 
-  2 | Bennison D | bennisondevadoss@gmail.com | $2b$10$T5AyyS31IJIkaR1cbH5./OKYLYBX6MKqEYFDa1GY3Dg11B6diIxQO |              | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30 | 2022-03-29 16:02:14.031+05:30
-  3 | Bennison D | bennisondevadoss@gmail.com | $2b$10$VSY6ELE0wpvSNY0tjKhdbuYOGFly.HJsJuOfkV8Wn4Gwv6U94gRlW |              | 2022-03-29 16:03:58.218+05:30 | 2022-03-29 16:03:58.218+05:30 | 2022-03-29 16:03:58.218+05:30
-(3 rows)
-
-library-db=# select * from ""U"s"e"r"s"
-library-db-# ; 
- id | name | email | encrypted_password | access_token | createdAt | updatedAt | deletedAt 
-----+------+-------+--------------------+--------------+-----------+-----------+-----------
-(0 rows)
-
-library-db=# see[Klect * from ""B"o"o"k"s"
-library-db-# ; 
- id | name | category | author | price | notes | createdAt | updatedAt | deletedAt 
-----+------+----------+--------+-------+-------+-----------+-----------+-----------
-(0 rows)
-
-library-db=# exit
-postgres@yavar:/home/bennison/library-management$ exit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sq[Kequelise[K[Kze-cli migrate:seed:all
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-sequelize-cli <command>
-
-Commands:
-  sequelize-cli db:migrate                        Run pending migrations
-  sequelize-cli db:migrate:schema:timestamps:add  Update migration table to have timestamps
-  sequelize-cli db:migrate:status                 List the status of all migrations
-  sequelize-cli db:migrate:undo                   Reverts a migration
-  sequelize-cli db:migrate:undo:all               Revert all migrations ran
-  sequelize-cli db:seed                           Run specified seeder
-  sequelize-cli db:seed:undo                      Deletes data from the database
-  sequelize-cli db:seed:all                       Run every seeder
-  sequelize-cli db:seed:undo:all                  Deletes data from the database
-  sequelize-cli db:create                         Create database specified by configuration
-  sequelize-cli db:drop                           Drop database specified by configuration
-  sequelize-cli init                              Initializes project
-  sequelize-cli init:config                       Initializes configuration
-  sequelize-cli init:migrations                   Initializes migrations
-  sequelize-cli init:models                       Initializes models
-  sequelize-cli init:seeders                      Initializes seeders
-  sequelize-cli migration:generate                Generates a new migration file
-  sequelize-cli migration:create                  Generates a new migration file
-  sequelize-cli model:generate                    Generates a model and its migration
-  sequelize-cli model:create                      Generates a model and its migration
-  sequelize-cli seed:generate                     Generates a new seed file
-  sequelize-cli seed:create                       Generates a new seed file
-
-Options:
-  --version  Show version number                                                                                                                                                                                                                                       [boolean]
-  --help     Show help                                                                                                                                                                                                                                                 [boolean]
-
-Unknown arguments: config, models-path, modelsPath, seeders-path, seedersPath, migrations-path, migrationsPath, migrate:seed:all
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sequelize-cli migrate:seed:alldmigrate:seed:allbmigrate:seed:all:migrate:seed:all
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-sequelize-cli <command>
-
-Commands:
-  sequelize-cli db:migrate                        Run pending migrations
-  sequelize-cli db:migrate:schema:timestamps:add  Update migration table to have timestamps
-  sequelize-cli db:migrate:status                 List the status of all migrations
-  sequelize-cli db:migrate:undo                   Reverts a migration
-  sequelize-cli db:migrate:undo:all               Revert all migrations ran
-  sequelize-cli db:seed                           Run specified seeder
-  sequelize-cli db:seed:undo                      Deletes data from the database
-  sequelize-cli db:seed:all                       Run every seeder
-  sequelize-cli db:seed:undo:all                  Deletes data from the database
-  sequelize-cli db:create                         Create database specified by configuration
-  sequelize-cli db:drop                           Drop database specified by configuration
-  sequelize-cli init                              Initializes project
-  sequelize-cli init:config                       Initializes configuration
-  sequelize-cli init:migrations                   Initializes migrations
-  sequelize-cli init:models                       Initializes models
-  sequelize-cli init:seeders                      Initializes seeders
-  sequelize-cli migration:generate                Generates a new migration file
-  sequelize-cli migration:create                  Generates a new migration file
-  sequelize-cli model:generate                    Generates a model and its migration
-  sequelize-cli model:create                      Generates a model and its migration
-  sequelize-cli seed:generate                     Generates a new seed file
-  sequelize-cli seed:create                       Generates a new seed file
-
-Options:
-  --version  Show version number                                                                                                                                                                                                                                       [boolean]
-  --help     Show help                                                                                                                                                                                                                                                 [boolean]
-
-Unknown arguments: config, models-path, modelsPath, seeders-path, seedersPath, migrations-path, migrationsPath, db:migrate:seed:all
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sequelize-cli db:migrate:seed:all[1Pseed:all[1Pseed:all[1Pseed:all[1Pseed:all[1Pseed:all[1Pseed:all[1Pseed:all[1Pseed:all
-
-[4mSequelize CLI [Node: 16.14.2, CLI: 6.4.1, ORM: 6.17.0][24m
-
-Loaded configuration file "db/config/config.json".
-Using environment "development".
-== 20220329060210-Users: migrating =======
-== 20220329060210-Users: migrated (0.076s)
-
-== 20220329060453-Books: migrating =======
-== 20220329060453-Books: migrated (0.002s)
-
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su postgres
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# \lit[K[K[K[K][K\c libraty[K[Kry-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# \dt
-             List of relations
- Schema |     Name      | Type  |  Owner   
---------+---------------+-------+----------
- public | Books         | table | bennison
- public | SequelizeMeta | table | bennison
- public | Users         | table | bennison
-(3 rows)
-
-library-db=# selet[Kct * from B[K""B"o"o"k"s"[C;
- id |             name             | category |     author     | price |               notes               |           createdAt           |           updatedAt           | deletedAt 
-----+------------------------------+----------+----------------+-------+-----------------------------------+-------------------------------+-------------------------------+-----------
- 16 |  Alchemist                   | Novel    | Paulo Coelho   |   599 | One of the best book in the world | 2022-03-29 16:07:45.028+05:30 | 2022-03-29 16:07:45.028+05:30 | 
- 17 | The word as I see it         | Novel    | Albert Einsten |   399 | International best sellers        | 2022-03-29 16:07:45.028+05:30 | 2022-03-29 16:07:45.028+05:30 | 
- 18 | All the night we can not see | Novel    | Mike           |   299 |                                   | 2022-03-29 16:07:45.028+05:30 | 2022-03-29 16:07:45.028+05:30 | 
-(3 rows)
-
-library-db=# see[Klect * from ""U"s"e"r"s"[C; 
- id |    name    |           email            |                      encrypted_password                      | access_token |           createdAt           |           updatedAt           | deletedAt 
-----+------------+----------------------------+--------------------------------------------------------------+--------------+-------------------------------+-------------------------------+-----------
-  4 | Bennison D | bennisondevadoss@gmail.com | $2b$10$35kcMBMt.Loo/IwWwROh/.z7USngou2Qjnn1fQjHKinzqOy/3XM8W |              | 2022-03-29 16:07:45.024+05:30 | 2022-03-29 16:07:45.024+05:30 | 
-(1 row)
-
-library-db=# [Klibrary-db=# exit
-postgres@yavar:/home/bennison/library-management$ exit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm start
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648552492827,"pid":17960,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648552518430,"pid":17960,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45956},"msg":"incoming request"}
-{"level":30,"time":1648552518434,"pid":17960,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"err":{"type":"Error","message":"WHERE parameter \"email\" has invalid \"undefined\" value","stack":"Error: WHERE parameter \"email\" has invalid \"undefined\" value\n    at PostgresQueryGenerator.whereItemQuery (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1655:13)\n    at /home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1646:25\n    at Array.forEach (<anonymous>)\n    at PostgresQueryGenerator.whereItemsQuery (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1644:35)\n    at PostgresQueryGenerator.getWhereConditions (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1987:19)\n    at PostgresQueryGenerator.selectQuery (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:932:28)\n    at PostgresQueryInterface.select (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)\n    at Function.findAll (/home/bennison/library-management/node_modules/sequelize/lib/model.js:1119:47)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async Function.findOne (/home/bennison/library-management/node_modules/sequelize/lib/model.js:1213:12)"},"msg":"WHERE parameter \"email\" has invalid \"undefined\" value"}
-{"level":30,"time":1648552518437,"pid":17960,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"responseTime":6.604079000651836,"msg":"request completed"}
-{"level":30,"time":1648552576276,"pid":17960,"hostname":"yavar","reqId":"req-2","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45958},"msg":"incoming request"}
-{"level":30,"time":1648552576277,"pid":17960,"hostname":"yavar","reqId":"req-2","res":{"statusCode":400},"err":{"type":"Error","message":"WHERE parameter \"email\" has invalid \"undefined\" value","stack":"Error: WHERE parameter \"email\" has invalid \"undefined\" value\n    at PostgresQueryGenerator.whereItemQuery (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1655:13)\n    at /home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1646:25\n    at Array.forEach (<anonymous>)\n    at PostgresQueryGenerator.whereItemsQuery (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1644:35)\n    at PostgresQueryGenerator.getWhereConditions (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1987:19)\n    at PostgresQueryGenerator.selectQuery (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-generator.js:932:28)\n    at PostgresQueryInterface.select (/home/bennison/library-management/node_modules/sequelize/lib/dialects/abstract/query-interface.js:396:59)\n    at Function.findAll (/home/bennison/library-management/node_modules/sequelize/lib/model.js:1119:47)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async Function.findOne (/home/bennison/library-management/node_modules/sequelize/lib/model.js:1213:12)"},"msg":"WHERE parameter \"email\" has invalid \"undefined\" value"}
-{"level":30,"time":1648552576277,"pid":17960,"hostname":"yavar","reqId":"req-2","res":{"statusCode":400},"responseTime":1.1724560000002384,"msg":"request completed"}
-{"level":30,"time":1648552601099,"pid":17960,"hostname":"yavar","reqId":"req-3","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45960},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":30,"time":1648552601124,"pid":17960,"hostname":"yavar","reqId":"req-3","res":{"statusCode":400},"err":{"type":"Error","message":"data and hash arguments required","stack":"Error: data and hash arguments required\n    at Object.compareSync (/home/bennison/library-management/node_modules/bcrypt/bcrypt.js:166:15)\n    at /home/bennison/library-management/app/controllers/Users.js:19:32\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"},"msg":"data and hash arguments required"}
-{"level":30,"time":1648552601125,"pid":17960,"hostname":"yavar","reqId":"req-3","res":{"statusCode":400},"responseTime":25.26588099822402,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648552678962,"pid":18066,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648552683731,"pid":18066,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45962},"msg":"incoming request"}
-{"level":50,"time":1648552683731,"pid":18066,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45962},"res":{"statusCode":500},"err":{"type":"TypeError","message":"Cannot read properties of null (reading 'email')","stack":"TypeError: Cannot read properties of null (reading 'email')\n    at Object.login (/home/bennison/library-management/app/controllers/Users.js:8:37)\n    at preHandlerCallback (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:126:28)\n    at preValidationCallback (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:109:5)\n    at handler (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:72:7)\n    at handleRequest (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:20:5)\n    at runPreParsing (/home/bennison/library-management/node_modules/fastify/lib/route.js:451:5)\n    at Object.routeHandler [as handler] (/home/bennison/library-management/node_modules/fastify/lib/route.js:409:7)\n    at Router.lookup (/home/bennison/library-management/node_modules/find-my-way/index.js:378:14)\n    at Server.emit (node:events:526:28)\n    at parserOnIncoming (node:_http_server:951:12)"},"msg":"Cannot read properties of null (reading 'email')"}
-{"level":30,"time":1648552683734,"pid":18066,"hostname":"yavar","reqId":"req-1","res":{"statusCode":500},"responseTime":3.0087420009076595,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648552808930,"pid":18126,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553287137,"pid":18346,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553293561,"pid":18366,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553313540,"pid":18391,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648553322210,"pid":18391,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45964},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users";
-{"level":30,"time":1648553322237,"pid":18391,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":26.99944099970162,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553403921,"pid":18462,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":50,"time":1648553417641,"pid":18485,"hostname":"yavar","generatedMessage":false,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"==","stack":"AssertionError [ERR_ASSERTION]: Method 'GET' already declared for route '/userlogin' with constraints '{}'\n    at Router._insert (/home/bennison/library-management/node_modules/find-my-way/index.js:303:7)\n    at Router._on (/home/bennison/library-management/node_modules/find-my-way/index.js:231:8)\n    at Router.on (/home/bennison/library-management/node_modules/find-my-way/index.js:100:8)\n    at Object.afterRouteAdded (/home/bennison/library-management/node_modules/fastify/lib/route.js:261:16)\n    at /home/bennison/library-management/node_modules/fastify/lib/route.js:188:25\n    at Object._encapsulateThreeParam (/home/bennison/library-management/node_modules/avvio/boot.js:551:7)\n    at Boot.timeoutCall (/home/bennison/library-management/node_modules/avvio/boot.js:447:5)\n    at Boot.callWithCbOrNextTick (/home/bennison/library-management/node_modules/avvio/boot.js:428:19)\n    at Boot._after (/home/bennison/library-management/node_modules/avvio/boot.js:273:26)\n    at Plugin.exec (/home/bennison/library-management/node_modules/avvio/plugin.js:132:19)","type":"Error","msg":"Method 'GET' already declared for route '/userlogin' with constraints '{}'"}
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553422164,"pid":18498,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553431622,"pid":18515,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648553439519,"pid":18515,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45966},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users";
-{"level":30,"time":1648553439550,"pid":18515,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":30.525744000449777,"msg":"request completed"}
-{"level":30,"time":1648553445122,"pid":18515,"hostname":"yavar","reqId":"req-2","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45968},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users";
-{"level":30,"time":1648553445124,"pid":18515,"hostname":"yavar","reqId":"req-2","res":{"statusCode":200},"responseTime":2.0454939994961023,"msg":"request completed"}
-{"level":30,"time":1648553449720,"pid":18515,"hostname":"yavar","reqId":"req-3","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45968},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users";
-{"level":30,"time":1648553449722,"pid":18515,"hostname":"yavar","reqId":"req-3","res":{"statusCode":200},"responseTime":1.9201969988644123,"msg":"request completed"}
-{"level":30,"time":1648553450953,"pid":18515,"hostname":"yavar","reqId":"req-4","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45968},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users";
-{"level":30,"time":1648553450955,"pid":18515,"hostname":"yavar","reqId":"req-4","res":{"statusCode":200},"responseTime":1.179661000147462,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553520027,"pid":18596,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648553523124,"pid":18596,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45970},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":50,"time":1648553523152,"pid":18596,"hostname":"yavar","reqId":"req-1","err":{"type":"FastifyError","message":"Promise may not be fulfilled with 'undefined' when statusCode is not 204","stack":"FastifyError: Promise may not be fulfilled with 'undefined' when statusCode is not 204\n    at /home/bennison/library-management/node_modules/fastify/lib/wrapThenable.js:30:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","name":"FastifyError","code":"FST_ERR_PROMISE_NOT_FULFILLED","statusCode":500},"msg":"Promise may not be fulfilled with 'undefined' when statusCode is not 204"}
-{"level":30,"time":1648553555418,"pid":18596,"hostname":"yavar","reqId":"req-2","req":{"method":"GET","url":"/list","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45972},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users";
-{"level":30,"time":1648553555423,"pid":18596,"hostname":"yavar","reqId":"req-2","res":{"statusCode":200},"responseTime":5.573882998898625,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553591070,"pid":18657,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648553594108,"pid":18657,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45974},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":30,"time":1648553594191,"pid":18657,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":81.99969100020826,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553626378,"pid":18694,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553637601,"pid":18714,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648553642563,"pid":18714,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45976},"msg":"incoming request"}
-{"level":50,"time":1648553642563,"pid":18714,"hostname":"yavar","reqId":"req-1","req":{"method":"GET","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45976},"res":{"statusCode":500},"err":{"type":"TypeError","message":"Cannot read properties of null (reading 'email')","stack":"TypeError: Cannot read properties of null (reading 'email')\n    at Object.login (/home/bennison/library-management/app/controllers/Users.js:14:37)\n    at preHandlerCallback (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:126:28)\n    at preValidationCallback (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:109:5)\n    at handler (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:72:7)\n    at handleRequest (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:20:5)\n    at runPreParsing (/home/bennison/library-management/node_modules/fastify/lib/route.js:451:5)\n    at Object.routeHandler [as handler] (/home/bennison/library-management/node_modules/fastify/lib/route.js:409:7)\n    at Router.lookup (/home/bennison/library-management/node_modules/find-my-way/index.js:378:14)\n    at Server.emit (node:events:526:28)\n    at parserOnIncoming (node:_http_server:951:12)"},"msg":"Cannot read properties of null (reading 'email')"}
-{"level":30,"time":1648553642566,"pid":18714,"hostname":"yavar","reqId":"req-1","res":{"statusCode":500},"responseTime":2.933637998998165,"msg":"request completed"}
-{"level":30,"time":1648553647642,"pid":18714,"hostname":"yavar","reqId":"req-2","req":{"method":"GET","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45976},"msg":"incoming request"}
-{"level":50,"time":1648553647642,"pid":18714,"hostname":"yavar","reqId":"req-2","req":{"method":"GET","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45976},"res":{"statusCode":500},"err":{"type":"TypeError","message":"Cannot read properties of null (reading 'email')","stack":"TypeError: Cannot read properties of null (reading 'email')\n    at Object.login (/home/bennison/library-management/app/controllers/Users.js:14:37)\n    at preHandlerCallback (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:126:28)\n    at preValidationCallback (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:109:5)\n    at handler (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:72:7)\n    at handleRequest (/home/bennison/library-management/node_modules/fastify/lib/handleRequest.js:20:5)\n    at runPreParsing (/home/bennison/library-management/node_modules/fastify/lib/route.js:451:5)\n    at Object.routeHandler [as handler] (/home/bennison/library-management/node_modules/fastify/lib/route.js:409:7)\n    at Router.lookup (/home/bennison/library-management/node_modules/find-my-way/index.js:378:14)\n    at Server.emit (node:events:526:28)\n    at parserOnIncoming (node:_http_server:951:12)"},"msg":"Cannot read properties of null (reading 'email')"}
-{"level":30,"time":1648553647643,"pid":18714,"hostname":"yavar","reqId":"req-2","res":{"statusCode":500},"responseTime":0.5949830003082752,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553667711,"pid":18750,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553668910,"pid":18766,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648553675298,"pid":18766,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45978},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":30,"time":1648553675389,"pid":18766,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":90.02579199895263,"msg":"request completed"}
-{"level":30,"time":1648553684535,"pid":18766,"hostname":"yavar","reqId":"req-2","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45980},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":50,"time":1648553684589,"pid":18766,"hostname":"yavar","reqId":"req-2","err":{"type":"FastifyError","message":"Promise may not be fulfilled with 'undefined' when statusCode is not 204","stack":"FastifyError: Promise may not be fulfilled with 'undefined' when statusCode is not 204\n    at /home/bennison/library-management/node_modules/fastify/lib/wrapThenable.js:30:30\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","name":"FastifyError","code":"FST_ERR_PROMISE_NOT_FULFILLED","statusCode":500},"msg":"Promise may not be fulfilled with 'undefined' when statusCode is not 204"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553738941,"pid":18826,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553740808,"pid":18846,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648553741906,"pid":18861,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648553764956,"pid":18861,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45982},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":30,"time":1648553765039,"pid":18861,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"responseTime":83.2727530002594,"msg":"request completed"}
-{"level":30,"time":1648553767318,"pid":18861,"hostname":"yavar","reqId":"req-2","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45982},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":30,"time":1648553767374,"pid":18861,"hostname":"yavar","reqId":"req-2","res":{"statusCode":400},"responseTime":56.03458799980581,"msg":"request completed"}
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm install jsonwebtoken
-[?25l[[100;90m..................[0m] \ reify: [32;40mtiming[0m [35marborist:ctor[0m Completed in 0ms[0m[K[[100;90m..................[0m] | idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] | idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] - idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] | idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] / idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m#########[0m[100;90m.........[0m] - idealTree:library-management: [32;40mtiming[0m [35midealTree:#root[0m Completed in 601ms[0m[K[[107;97m##########[0m[100;90m........[0m] - reify:fsevents: [7msill[0m [35mreify[0m mark deleted [ '/home/bennison/library-management/node_modules/fsevents' ][0m[K[[107;97m##########[0m[100;90m........[0m] \ reify:semver: [7msill[0m [35mtarball[0m no local data for lodash.isboolean@https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz. Extracting by manifest.[0m[K[[107;97m###########[0m[100;90m.......[0m] / reify:lodash.isplainobject: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz 82ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] / reify:lodash.isnumber: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz 122ms (cache miss)[0m[K[[107;97m################[0m[100;90m..[0m] / reify:lodash.isnumber: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz 122ms (cache miss)[0m[K[[107;97m#################[0m[100;90m.[0m] / reify:jws: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/jws/-/jws-3.2.2.tgz 197ms (cache miss)[0m[K[[107;97m##################[0m] / reify:jsonwebtoken: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz 287ms (cache miss)[0m[K[K[?25h
-added 13 packages, and audited 249 packages in 2s
-
-23 packages are looking for funding
-  run `npm fund` for details
-
-found [32m[1m0[22m[39m vulnerabilities
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ date
-Tuesday 29 March 2022 05:49:56 PM IST
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm ins[K[K[Kstart
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648557003330,"pid":21021,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648557021254,"pid":21021,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/userlogin","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45984},"msg":"incoming request"}
-Executing (default): SELECT "id", "name", "email", "encrypted_password", "access_token", "createdAt", "updatedAt" FROM "Users" AS "Users" WHERE "Users"."email" = 'bennisondevadoss@gmail.com' LIMIT 1;
-{"level":30,"time":1648557021336,"pid":21021,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"responseTime":81.87447800114751,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648557126541,"pid":21174,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648557208567,"pid":21214,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648557210189,"pid":21234,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm install dotenv
-[?25l[[100;90m..................[0m] \ reify: [32;40mtiming[0m [35marborist:ctor[0m Completed in 0ms[0m[K[[100;90m..................[0m] | idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[100;90m..................[0m] / idealTree:library-management: [7msill[0m [35midealTree[0m buildDeps[0m[K[[107;97m#########[0m[100;90m.........[0m] | idealTree: [32;40mtiming[0m [35midealTree[0m Completed in 385ms[0m[K[[107;97m##############[0m[100;90m....[0m] \ reify:fsevents: [7msill[0m [35mreify[0m mark deleted [ '/home/bennis[0m[K[[107;97m##############[0m[100;90m....[0m] \ reify:fsevents: [7msill[0m [35mreify[0m mark deleted [ '/home/bennis[0m[K[[107;97m##################[0m] | reify:dotenv: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs[0m[K[[107;97m##################[0m] / reify:dotenv: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs[0m[K[[107;97m##################[0m] / reify:dotenv: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs[0m[K[[107;97m##################[0m] / reify:dotenv: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs[0m[K[[107;97m##################[0m] / reify:dotenv: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs[0m[K[K[?25h
-added 1 package, and audited 250 packages in 924ms
-
-23 packages are looking for funding
-  run `npm fund` for details
-
-found [32m[1m0[22m[39m vulnerabilities
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm sun[K[K[Kstart
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648558240604,"pid":21736,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm start
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648558274211,"pid":21789,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648558656957,"pid":22032,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648561785985,"pid":23080,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648562404646,"pid":23268,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648562428128,"pid":23293,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-{"level":30,"time":1648562605862,"pid":23369,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ [K]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ [K]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su posg[Ktgres
-[sudo] password for bennison: 
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# \[K\c liba[Krary-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# \[Ksee[Klect * from ""U"s"e"r"s"
-library-db-# ; 
- id |    name    |           email            |                      encrypted_password                      | access_token |           createdAt           |           updatedAt           | deletedAt 
-----+------------+----------------------------+--------------------------------------------------------------+--------------+-------------------------------+-------------------------------+-----------
-  4 | Bennison D | bennisondevadoss@gmail.com | $2b$10$35kcMBMt.Loo/IwWwROh/.z7USngou2Qjnn1fQjHKinzqOy/3XM8W |              | 2022-03-29 16:07:45.024+05:30 | 2022-03-29 16:07:45.024+05:30 | 
-(1 row)
-
-library-db=# exit
-postgres@yavar:/home/bennison/library-management$ exit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ n[[Kpm start
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648564277099,"pid":25067,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648564352257,"pid":25132,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648564427167,"pid":25189,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648564433697,"pid":25210,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648564443117,"pid":25231,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648564584921,"pid":25231,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/user/add","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45986},"msg":"incoming request"}
-{"level":30,"time":1648564584976,"pid":25231,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"err":{"type":"ValidationError","message":"string violation: access_token cannot be an array or an object","stack":"SequelizeValidationError: string violation: access_token cannot be an array or an object\n    at InstanceValidator._validate (/home/bennison/library-management/node_modules/sequelize/lib/instance-validator.js:50:13)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async InstanceValidator._validateAndRunHooks (/home/bennison/library-management/node_modules/sequelize/lib/instance-validator.js:60:7)\n    at async InstanceValidator.validate (/home/bennison/library-management/node_modules/sequelize/lib/instance-validator.js:54:12)\n    at async Users.save (/home/bennison/library-management/node_modules/sequelize/lib/model.js:2353:7)\n    at async Function.create (/home/bennison/library-management/node_modules/sequelize/lib/model.js:1329:12)","name":"SequelizeValidationError","errors":[{"message":"access_token cannot be an array or an object","type":"string violation","path":"access_token","value":{"expiresIn":"1800s"},"origin":"CORE","instance":{"id":null,"name":"Gibson","email":"gibsonJoseph@gmail.com","encrypted_password":"$2b$10$vGp9lcJuwsg9WB3Hf1LQc.tZQj6gtwR7EackODeESz4Hq0ZIiPlK2","access_token":{"expiresIn":"1800s"},"updatedAt":"2022-03-29T14:36:24.975Z","createdAt":"2022-03-29T14:36:24.975Z"},"validatorKey":"not_a_string","validatorName":null,"validatorArgs":[]}]},"msg":"string violation: access_token cannot be an array or an object"}
-{"level":30,"time":1648564584979,"pid":25231,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"responseTime":57.46299500018358,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648564743809,"pid":25405,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648564749594,"pid":25405,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/user/add","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45988},"msg":"incoming request"}
-Executing (default): INSERT INTO "Users" ("id","name","email","encrypted_password","access_token","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING "id","name","email","encrypted_password","access_token","createdAt","updatedAt";
-{"level":30,"time":1648564749685,"pid":25405,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":89.83912000060081,"msg":"request completed"}
-^^C^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su postgres
-[sudo] password for bennison: 
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# ][K\c library-db
-You are now connected to database "library-db" as user "postgres".
-library-db=# see[Klect * from ""U"s"e"r"s"[C; 
- id |    name    |           email            |                      encrypted_password                      |  access_token   |           createdAt           |           updatedAt           | deletedAt 
-----+------------+----------------------------+--------------------------------------------------------------+-----------------+-------------------------------+-------------------------------+-----------
-  4 | Bennison D | bennisondevadoss@gmail.com | $2b$10$35kcMBMt.Loo/IwWwROh/.z7USngou2Qjnn1fQjHKinzqOy/3XM8W |                 | 2022-03-29 16:07:45.024+05:30 | 2022-03-29 16:07:45.024+05:30 | 
-  5 | Gibson     | gibsonJoseph@gmail.com     | $2b$10$hylO4szvhEmGkTuOOr9lwOwX.RMV4U.56IZkiwWJaDX9bphyJ0wFG | [object Object] | 2022-03-29 20:09:09.649+05:30 | 2022-03-29 20:09:09.649+05:30 | 
-(2 rows)
-
-library-db=# exit
-postgres@yavar:/home/bennison/library-management$ ext[Kit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su postgres[7Pnpm start
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648564905959,"pid":25634,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648564921952,"pid":25634,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/user/add","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45994},"msg":"incoming request"}
-Executing (default): INSERT INTO "Users" ("id","name","email","encrypted_password","access_token","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING "id","name","email","encrypted_password","access_token","createdAt","updatedAt";
-{"level":30,"time":1648564922043,"pid":25634,"hostname":"yavar","reqId":"req-1","res":{"statusCode":200},"responseTime":89.93843999877572,"msg":"request completed"}
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ sudo su poss[Ktgres
-postgres@yavar:/home/bennison/library-management$ psql
-psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
-Type "help" for help.
-
-postgres=# \c test[K[K[K[Klibrary-t[Kdb
-You are now connected to database "library-db" as user "postgres".
-library-db=# select * r[Kfrim [K[K[Kom ""U"s"e"r"s"
-library-db-# ;
-[?1049h[22;0;0t[?1h= id |    name    |           email            |                      encrypted_password                      |     access_token      |           createdAt           |           updatedAt           | dele tedAt 
-----+------------+----------------------------+--------------------------------------------------------------+-----------------------+-------------------------------+-------------------------------+----- ------
-  4 | Bennison D | bennisondevadoss@gmail.com | $2b$10$35kcMBMt.Loo/IwWwROh/.z7USngou2Qjnn1fQjHKinzqOy/3XM8W |                       | 2022-03-29 16:07:45.024+05:30 | 2022-03-29 16:07:45.024+05:30 | 
-  5 | Gibson     | gibsonJoseph@gmail.com     | $2b$10$hylO4szvhEmGkTuOOr9lwOwX.RMV4U.56IZkiwWJaDX9bphyJ0wFG | [object Object]       | 2022-03-29 20:09:09.649+05:30 | 2022-03-29 20:09:09.649+05:30 | 
-  6 | Gibs       | gibsonJoseph@gmail.com     | $2b$10$Dqz5tj1bjhMqr3OUj3cZue/HLSfU8S9KoWKSyD2jh3x3NCdRgUNnC | {"expiresIn":"1800s"} | 2022-03-29 20:12:02.008+05:30 | 2022-03-29 20:12:02.008+05:30 | 
-(3 rows)
-
-[7m(END)[27m[K[K[?1l>[?1049l[23;0;0tlibrary-db=# exit
-postgres@yavar:/home/bennison/library-management$ exit
-exit
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ npm run star[K[K[K[K[K[K[K[K[Ks [K[K start
-
-> library-management@1.0.0 start
-> nodemon server.js
-
-[33m[nodemon] 2.0.15[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648565233455,"pid":25825,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-{"level":30,"time":1648565249497,"pid":25825,"hostname":"yavar","reqId":"req-1","req":{"method":"POST","url":"/user/add","hostname":"127.0.0.1:4000","remoteAddress":"127.0.0.1","remotePort":45996},"msg":"incoming request"}
-{"level":30,"time":1648565249553,"pid":25825,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"err":{"type":"ValidationError","message":"string violation: access_token cannot be an array or an object","stack":"SequelizeValidationError: string violation: access_token cannot be an array or an object\n    at InstanceValidator._validate (/home/bennison/library-management/node_modules/sequelize/lib/instance-validator.js:50:13)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async InstanceValidator._validateAndRunHooks (/home/bennison/library-management/node_modules/sequelize/lib/instance-validator.js:60:7)\n    at async InstanceValidator.validate (/home/bennison/library-management/node_modules/sequelize/lib/instance-validator.js:54:12)\n    at async Users.save (/home/bennison/library-management/node_modules/sequelize/lib/model.js:2353:7)\n    at async Function.create (/home/bennison/library-management/node_modules/sequelize/lib/model.js:1329:12)","name":"SequelizeValidationError","errors":[{"message":"access_token cannot be an array or an object","type":"string violation","path":"access_token","value":{"expiresIn":"1800s"},"origin":"CORE","instance":{"id":null,"name":"Gibs","email":"gibsonJoseph@gmail.com","encrypted_password":"$2b$10$qbPueVHyn5C84bqgKKJR3eWAz6YFZEGJoivTnard.uAJEmxR1Esu2","access_token":{"expiresIn":"1800s"},"updatedAt":"2022-03-29T14:47:29.551Z","createdAt":"2022-03-29T14:47:29.551Z"},"validatorKey":"not_a_string","validatorName":null,"validatorArgs":[]}]},"msg":"string violation: access_token cannot be an array or an object"}
-{"level":30,"time":1648565249555,"pid":25825,"hostname":"yavar","reqId":"req-1","res":{"statusCode":400},"responseTime":57.384808998554945,"msg":"request completed"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648565409214,"pid":25901,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{"level":30,"time":1648565429478,"pid":25924,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-/home/bennison/library-management/app/controllers/Users.js:14
-console.log(generateAccessToken(gibson));
-                                ^
-
-ReferenceError: gibson is not defined
-    at Object.<anonymous> (/home/bennison/library-management/app/controllers/Users.js:14:33)
-[90m    at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
-[90m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
-[90m    at Module.load (node:internal/modules/cjs/loader:981:32)[39m
-[90m    at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
-[90m    at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
-[90m    at require (node:internal/modules/cjs/helpers:102:18)[39m
-    at Object.<anonymous> (/home/bennison/library-management/app/controllers/index.js:2:15)
-[90m    at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
-[90m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{ expiresIn: [32m'1800s'[39m }
-{"level":30,"time":1648565468626,"pid":25963,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-{ expiresIn: [32m'1800s'[39m }
-{"level":30,"time":1648565573728,"pid":26161,"hostname":"yavar","msg":"Server listening at http://127.0.0.1:4000"}
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.js`[39m
-process.env.TOKEN_SECRET: ec39f344aa0d73b258f69132c9b91c9229563521a06a977b92aaa1f84a44dbdf02220784aecde4b6ee628cb4592227accb7a1a059e8e6fc16ac3a1a9f05db865
-/home/bennison/library-management/node_modules/jsonwebtoken/sign.js:103
-    throw err;
-    ^
-
-Error: invalid expiresIn option for string payload
-    at Object.module.exports [as sign] (/home/bennison/library-management/node_modules/[4mjsonwebtoken[24m/sign.js:128:22)
-    at generateAccessToken (/home/bennison/library-management/app/controllers/Users.js:12:16)
-    at Object.<anonymous> (/home/bennison/library-management/app/controllers/Users.js:14:13)
-[90m    at Module._compile (node:internal/modules/cjs/loader:1103:14)[39m
-[90m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)[39m
-[90m    at Module.load (node:internal/modules/cjs/loader:981:32)[39m
-[90m    at Function.Module._load (node:internal/modules/cjs/loader:822:12)[39m
-[90m    at Module.require (node:internal/modules/cjs/loader:1005:19)[39m
-[90m    at require (node:internal/modules/cjs/helpers:102:18)[39m
-    at Object.<anonymous> (/home/bennison/library-management/app/controllers/index.js:2:15)
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-^C
-]0;bennison@yavar: ~/library-management[01;32mbennison@yavar[00m:[01;34m~/library-management[00m$ exit
-exit
-
-Script done on 2022-03-29 20:28:51+05:30 [COMMAND_EXIT_CODE="130"]
