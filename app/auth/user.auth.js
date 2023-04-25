@@ -69,17 +69,3 @@ const userAuthenticate = (fastify) => {
 }
 
 module.exports = userAuthenticate;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
